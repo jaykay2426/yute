@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     scroll-padding-top: 2rem;
@@ -155,6 +155,7 @@ body, html {
 .container {
     display: flex;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Left Section Styles */
@@ -281,6 +282,7 @@ body, html {
     align-items: center;
     padding: 10px 20px;
     background-color: #ffffff5e;
+    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -363,6 +365,7 @@ body, html {
     padding: 30px;
     max-width: 800px;
    margin-left: 4.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .brand-story h1 {
