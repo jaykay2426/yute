@@ -381,12 +381,12 @@ body, html {
 
 .image-container {
     border: 2px solid #0000ff; /* Blue border color */
-    width: 1657px;
+    width: 1557px;
 }
 
 .image-container img {
     display: block;
-    width: 1650px;
+    width: 1550px;
     margin-right: 20px;
     height: 600px;
 }
