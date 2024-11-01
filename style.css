@@ -1328,3 +1328,147 @@ main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for screens with a max-width of 768px */
+@media (max-width: 768px) {
+    .collections {
+        flex-direction: column; /* Stack the collection items */
+        align-items: center; /* Center items */
+    }
+
+    .collection-item {
+        width: 80%; /* Use a larger percentage for mobile screens */
+        margin-bottom: 20px; /* Add some space between items */
+    }
+
+    .cart-container {
+        width: 90%; /* Wider container on mobile */
+    }
+
+    .wishlist-item {
+        width: 100%; /* Full width for wishlist items */
+        margin: 10px 0; /* Reduce margin for a more compact view */
+    }
+
+    .profile-content {
+        flex-direction: column; /* Stack profile items vertically */
+    }
+
+    .profile-sidebar {
+        max-width: 100%; /* Allow sidebar to use full width */
+    }
+
+    .profile-details {
+        flex: 1; /* Let details take available space */
+    }
+
+    .social-media-links a {
+        font-size: 2rem; /* Adjust icon size */
+        margin-left: 10px; /* Reduce spacing */
+    }
+}
+
+/* Styles for screens with a max-width of 480px */
+@media (max-width: 480px) {
+    .add-to-cart, .checkout-btn, .update-button {
+        width: 100%; /* Full-width buttons */
+        padding: 15px; /* Increase padding for better touch targets */
+        font-size: 18px; /* Larger text for readability */
+    }
+
+    .cart-item img {
+        width: 80px; /* Smaller images in the cart */
+    }
+
+    .wishlist-item {
+        width: 100%; /* Full width for wishlist items */
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack footer links vertically */
+        align-items: center; /* Center footer links */
+    }
+
+    .footer-column {
+        margin: 10px 0; /* Reduce margin for better spacing */
+    }
+
+    .social-media-links a {
+        font-size: 2.5rem; /* Adjust icon size for smaller screens */
+        padding: 0.5rem; /* Adjust padding for smaller buttons */
+    }
+}
+
+
+
+
+
+
