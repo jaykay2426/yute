@@ -1391,84 +1391,94 @@ main {
 
 
 
-
-/* Styles for screens with a max-width of 768px */
-@media (max-width: 768px) {
-    .collections {
-        flex-direction: column; /* Stack the collection items */
-        align-items: center; /* Center items */
+/* General Small Screen Styles */
+@media (max-width: 758px) {
+    /* Reduce padding and margin for all sections */
+    .wishlist-section,
+    .contact-us,
+    .social-media-links,
+    .shipping-returns,
+    .terms-conditions,
+    .accessibility,
+    .privacy-policy,
+    .our-story,
+    .profile-section {
+        padding: 15px;
+        margin: 20px auto;
     }
 
-    .collection-item {
-        width: 80%; /* Use a larger percentage for mobile screens */
-        margin-bottom: 20px; /* Add some space between items */
+    /* Wishlist Item */
+    .wishlist-container {
+        flex-direction: column;
+        gap: 15px;
     }
-
-    .cart-container {
-        width: 90%; /* Wider container on mobile */
-    }
-
     .wishlist-item {
-        width: 100%; /* Full width for wishlist items */
-        margin: 10px 0; /* Reduce margin for a more compact view */
+        width: 100%; /* Full width for mobile */
     }
 
-    .profile-content {
-        flex-direction: column; /* Stack profile items vertically */
-    }
-
-    .profile-sidebar {
-        max-width: 100%; /* Allow sidebar to use full width */
-    }
-
-    .profile-details {
-        flex: 1; /* Let details take available space */
-    }
-
-    .social-media-links a {
-        font-size: 2rem; /* Adjust icon size */
-        margin-left: 10px; /* Reduce spacing */
-    }
-}
-
-/* Styles for screens with a max-width of 480px */
-@media (max-width: 480px) {
-    .add-to-cart, .checkout-btn, .update-button {
-        width: 100%; /* Full-width buttons */
-        padding: 15px; /* Increase padding for better touch targets */
-        font-size: 18px; /* Larger text for readability */
-    }
-
-    .cart-item img {
-        width: 80px; /* Smaller images in the cart */
-    }
-
-    .wishlist-item {
-        width: 100%; /* Full width for wishlist items */
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px; /* Smaller font size */
-    }
-
+    /* Footer */
     .footer-links {
-        flex-direction: column; /* Stack footer links vertically */
-        align-items: center; /* Center footer links */
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-column h3 {
+        text-align: center;
     }
 
-    .footer-column {
-        margin: 10px 0; /* Reduce margin for better spacing */
-    }
-
-    .social-media-links a {
-        font-size: 2.5rem; /* Adjust icon size for smaller screens */
-        padding: 0.5rem; /* Adjust padding for smaller buttons */
+    /* Overlay Menu */
+    .overlay a, .overlay button {
+        font-size: 20px;
+        padding: 10px 15px;
     }
 }
 
+/* Further Adjustments for 480px and Below */
+@media (max-width: 480px) {
+    /* Text alignment adjustments */
+    .wishlist-item h3,
+    .contact-us h1,
+    .social-media-links h1,
+    .shipping-returns h1,
+    .terms-conditions h1,
+    .accessibility h1,
+    .privacy-policy h1,
+    .our-story h1,
+    .profile-header h1 {
+        font-size: 24px;
+        text-align: center;
+    }
 
+    /* Reduce font size for smaller headings */
+    h2, h3 {
+        font-size: 18px;
+    }
 
+    /* Profile Section Adjustments */
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-sidebar,
+    .profile-details {
+        width: 100%;
+        max-width: none;
+    }
 
+    /* Footer input and button adjustments */
+    .footer-subscribe input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .footer-subscribe button {
+        width: 100%;
+    }
 
-
+    /* Social Media Links */
+    .social-media-links a {
+        font-size: 2rem;
+        padding: 0.75rem;
+        margin: 1rem 0.25rem;
+        margin-left: 0; /* Centered alignment */
+    }
+}
